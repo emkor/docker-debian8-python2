@@ -4,8 +4,11 @@ sudo: required
 services:
   - docker
 
-script:
+before_script:
   - docker build -t "$DOCKER_USERNAME"/debian8-python2 ./debian8-python2
+
+script:
+  - bash run_tests.sh
 
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
