@@ -6,3 +6,8 @@ services:
 
 script:
   - docker build -t "$DOCKER_USERNAME"/debian8-python2 ./debian8-python2
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    bash push_docker_image.sh;
+    fi
