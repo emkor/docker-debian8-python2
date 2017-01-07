@@ -1,6 +1,6 @@
 FROM debian:jessie-slim
 
-MAINTAINER emkor93@gmail.com
+MAINTAINER mkorzeniowski93@gmail.com
 LABEL version="0.1
 LABEL description="Docker image based on Debian 8 Jessie with python 2.7.13 installed and latest versions of pip and setuptools"
 
