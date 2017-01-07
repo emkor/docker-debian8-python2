@@ -1,0 +1,8 @@
+sudo: required
+language: python
+
+services:
+  - docker
+
+script:
+  - docker build -t "$DOCKER_USERNAME"/debian8-python2 ./debian8-python2
