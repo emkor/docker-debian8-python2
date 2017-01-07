@@ -4,7 +4,7 @@ Docker image based on Debian 8 Jessie with:
  - latest versions of pip and setuptools
 
 # usage
-To start interactively within Linux shell: 
+To start interactively with Linux shell: 
 - `docker run -it endlessdrones/debian8-python2`
 
 To start interactively with Python shell:
