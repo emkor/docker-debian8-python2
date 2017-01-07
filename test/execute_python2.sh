@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-python -c "raise Exception()"
+python --version &> /dev/null || exit 1

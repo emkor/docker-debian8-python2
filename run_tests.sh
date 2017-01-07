@@ -5,7 +5,6 @@
 docker run -it --name "test-debian8-python2" -v $(pwd)/test:/test -w /test endlessdrones/debian8-python2 bash ./execute_python2.sh
 docker stop "test-debian8-python2" && docker rm "test-debian8-python2"
 
-# install custom modules
+# install pip modules
 docker run -it --name "test-debian8-python2" -v $(pwd)/test:/test -w /test endlessdrones/debian8-python2 bash ./install_top_modules.sh
 docker stop "test-debian8-python2" && docker rm "test-debian8-python2"
-
