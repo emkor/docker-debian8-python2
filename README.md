@@ -2,7 +2,7 @@
 Docker image based on Debian 8 Jessie with:
  - Python 2.7.13 compiled from source and installed 
  - latest versions of pip and setuptools
- - latest numpy
+ - latest numpy and vamp installed
 
 # usage
 To start interactively with Linux shell: 
